@@ -14,9 +14,12 @@ count = 0
 BASE_URL = 'https://learngerman.dw.com'
 URL_CONTAINER_FILE = 'url_list_file'
 with open(URL_CONTAINER_FILE, "w") as text_file:    
+    # getting all the <a> elements from the HTML page.
     for link in BeautifulSoup(response.data,  features="html.parser").find_all('a'):
         if link.has_attr('href'):
             urlpart = link['href']
+            # Consider only the links which contain the transcripts. Ends with "l-" 
+            # https://learngerman.dw.com/en/hallo/l-37250531/lm For example.
             if urlpart.split('/')[-1][0:2] == "l-":
                 count = count + 1
                 print(BASE_URL+urlpart)
