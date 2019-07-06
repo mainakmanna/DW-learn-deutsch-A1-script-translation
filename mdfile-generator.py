@@ -36,7 +36,7 @@ for url in contents:
         s = s.splitlines()
         
         filename = url.split('/')[-2]+'.md'
-        with open(str(index)+'-'+filename,'w', encoding="utf-8")as text_file:
+        with open(str(index).zfill(2)+'-'+filename,'w', encoding="utf-8")as text_file:
             
             for line in s:
                 if len(line) > 0 :

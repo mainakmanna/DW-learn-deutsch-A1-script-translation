@@ -26,7 +26,7 @@ if os.path.exists(DIR_PATH) and os.path.isdir(DIR_PATH):
             with open(DIR_PATH+'/'+filename, 'r', encoding="utf-8") as fileRead:
                 lines = []
                 ct = 0
-                to-be-translated-box = browser.find_element_by_id('source')
+                tobetranslatedbox = browser.find_element_by_id('source')
 
                 str = ""
                 for line in fileRead:
@@ -38,7 +38,7 @@ if os.path.exists(DIR_PATH) and os.path.isdir(DIR_PATH):
                 bigy = originalStringLines
 
                 # passing the original text.
-                to-be-translated-box.send_keys(str)
+                tobetranslatedbox.send_keys(str)
 
                 time.sleep(5)
                 
