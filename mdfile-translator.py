@@ -33,9 +33,9 @@ if os.path.exists(DIR_PATH) and os.path.isdir(DIR_PATH):
                     str = str + line
                 #print(str)
 
-                originalStringLines =  str.splitlines()
+                original_text =  str.splitlines()
                 ctx  = 0
-                bigy = originalStringLines
+                bigy = original_text
 
                 # passing the original text.
                 tobetranslatedbox.send_keys(str)
@@ -43,10 +43,10 @@ if os.path.exists(DIR_PATH) and os.path.isdir(DIR_PATH):
                 time.sleep(5)
                 
                 # This element holds the translated texts.
-                ff = browser.find_element_by_css_selector('span.tlid-translation.translation').text
+                translated_text = browser.find_element_by_css_selector('span.tlid-translation.translation').text
                 
-                ff = ff.splitlines()
-                bigx = ff
+                translated_text = translated_text.splitlines()
+                bigx = translated_text
             towrite = '|DE|EN|\n|---|---|\n'
             for i in range(len(bigx)):
                 towrite = towrite + '|' + bigy[i] + '|' + bigx[i] + '|\n'
