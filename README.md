@@ -4,3 +4,5 @@ It also translates those scripts and arranges those in a markdown file in a tabl
 To run this project you need this packages:
 1. urllib3
 2. beautifulsoup4
+3. selenium
+4. chrome driver (75.0.3770.90 used here)
