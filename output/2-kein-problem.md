@@ -1,0 +1,17 @@
+EMMA:
+Hallo!
+Mist!
+MANN:
+Ja, ich bin gut angekommen. Du kannst mir die Unterlagen für das Meeting im Hotel hinterlegen.
+EMMA:
+Cool! Noch mal!
+MANN:
+Ins Zentrum bitte . Zum Königshof.
+TAXIFAHRER:
+Ins Zentrum, zum Königshof. Ins Restaurant Königshof oder zum Hotel Königshof?
+MANN:
+Hotel Königshof.
+TAXIFAHRER:
+Okay , kein Problem .
+NICO:
+Hey, stopp!
