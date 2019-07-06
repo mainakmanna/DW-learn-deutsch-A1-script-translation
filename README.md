@@ -6,3 +6,5 @@ To run this project you need this packages:
 2. beautifulsoup4
 3. selenium
 4. chrome driver (75.0.3770.90 used here)
+
+**The `output` folder contains the translated transcript files in a markdown table format.**
