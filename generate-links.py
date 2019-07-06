@@ -13,7 +13,7 @@ response = http.request('GET', COURSE_LINK)
 count = 0
 BASE_URL = 'https://learngerman.dw.com'
 URL_CONTAINER_FILE = 'url_list_file'
-with open(URL_CONTAINER_FILE, "w") as text_file:    
+with open(URL_CONTAINER_FILE, "w", encoding="utf-8") as text_file:    
     # getting all the <a> elements from the HTML page.
     for link in BeautifulSoup(response.data,  features="html.parser").find_all('a'):
         if link.has_attr('href'):
